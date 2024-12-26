@@ -3,7 +3,7 @@ author: xxxu
 pubDatetime: 2023-01-15T10:20:35Z
 modDatetime: 2023-01-15T10:20:35Z
 title: Aria2一键安装管理脚本
-slug:  Aria2 一键安装管理脚本
+slug:  Aria2-blog
 featured: false
 draft: false
 tags:
