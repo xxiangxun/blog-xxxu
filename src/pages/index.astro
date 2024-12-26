@@ -44,15 +44,6 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       <p>
         大家好!欢迎来到我的个人博客。在这个博客里，我会写我的项目(我做什么/怎么做的)，我的个人经历，以及一些随机的东西。
       </p>
-      <p>
-        Read the blog posts or check
-        <LinkButton
-          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-          href="https://github.com/satnaing/astro-paper#readme"
-        >
-          README
-        </LinkButton> for more info.
-      </p>
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
