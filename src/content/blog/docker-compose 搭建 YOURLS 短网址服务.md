@@ -7,7 +7,8 @@ slug: docker-compose-blog
 featured: false
 draft: false
 tags:
-  - 软件 工具
+  - 软件
+  - 工具
 description:
   docker-compose 搭建 YOURLS 短网址服务
 ---
