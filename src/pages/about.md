@@ -3,34 +3,23 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+你好，欢迎来到我的博客！
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
-
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+我是一个热爱记录生活和分享技术的人。这个博客是我记录生活点滴、学习心得以及技术分享的地方。我希望通过这个平台，不仅能够更好地整理和总结自己的成长过程，还能将我的经验和收获分享给更多的人。
 
 <div>
   <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
 </div>
 
-## Tech Stack
+## 我的博客会涵盖两个主要内容：
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+- 日常生活记录：这里会记录我在日常生活中的所见所闻、心情感悟以及生活中的点点滴滴。不论是开心的时刻，还是偶尔的小困惑，我都希望能通过文字把这些瞬间保存下来。
+- 技术分享：作为一个正在学习中的技术爱好者，我在这里会分享我的学习过程、技术心得以及一些有趣的项目。不论是编程技巧、新技术的探索，还是实用的工具分享，我都会尽力把它们整理成易懂的文章，希望能对同样在学习路上的你有所帮助。
 
-## Features
+## 为什么写博客
 
-Here are certain features of this site.
+写博客对我来说是一种整理思绪、分享经验的方式。通过记录生活，我希望能够回顾自己走过的路；通过技术分享，我希望能够帮助到其他和我一样正在学习的人们。
 
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
+## 一起交流
 
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+虽然我还是个新手，但我非常乐意与大家分享我的所见所学。如果你有任何问题或建议，或者想与我交流技术和生活，欢迎随时通过xxxu@xxxu.me联系我。非常感谢你的到来，希望我们能在这里共同成长！
