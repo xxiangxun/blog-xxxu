@@ -21,7 +21,7 @@ description:
 打开终端并运行以下命令：
 
 ```
-ssh-keygen -t rsa -b 4096
+ssh-keygen -t ed25519
 ```
 
 按照提示操作，可以选择保存密钥文件的路径，通常默认路径是 `~/.ssh/id_rsa`，并设置一个密码（如果需要的话）。
