@@ -108,3 +108,13 @@ sudo systemctl restart networking
 
 * `chmod 600 ~/.ssh/authorized_keys`：让只有文件所有者可以读写 `authorized_keys` 文件。
 * `chmod 700 ~/.ssh`：让只有文件所有者能够访问和修改 `~/.ssh` 目录，其他人没有权限。
+
+# 简单版：
+本地生成密钥对，设置一个密码![image](https://image.xxxu.me/rest/sB7XQMK.png)
+生成的公钥文件粘贴进这里![image](https://image.xxxu.me/rest/nyHXQMK.png)
+禁止密码登录，开启密钥登录![image](https://image.xxxu.me/rest/0GmXQMK.png)
+![image](https://image.xxxu.me/rest/6EQXQMK.png)
+最后重启ssh：
+```
+sudo systemctl restart ssh
+```
