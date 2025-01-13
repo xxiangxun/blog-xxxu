@@ -44,7 +44,7 @@ sudo nano /etc/exports
 在文件中添加以下行：
 
 ```
-/xxxu 192.1.1.2(rw,sync,no_subtree_check)
+/ceshi 192.1.1.2(rw,sync,no_subtree_check)
 ```
 
 * `/ceshi` 是共享的目录。
