@@ -47,7 +47,7 @@ sudo nano /etc/exports
 /xxxu 192.1.1.2(rw,sync,no_subtree_check)
 ```
 
-* `/xxxu` 是共享的目录。
+* `/ceshi` 是共享的目录。
 * `192.1.1.2` 是允许访问该目录的客户端 IP 地址。
 * `rw`：表示读写权限。
 * `sync`：表示写操作是同步的。
