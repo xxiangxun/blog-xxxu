@@ -68,3 +68,29 @@ html[data-theme="dark"] {
 :target {
   scroll-margin-block: 1rem;
 }
+
+/* ============================================== */
+/* 🌟 首页标题动态效果（柔和、高级、不花哨）       */
+/* ============================================== */
+.animate-title {
+  background: linear-gradient(90deg, var(--accent), #64748b, var(--accent));
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: title-gradient 6s ease-in-out infinite;
+}
+
+@keyframes title-gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 轻微悬浮放大效果 */
+.animate-title-hover {
+  transition: all 0.3s ease;
+}
+.animate-title-hover:hover {
+  transform: scale(1.03);
+}
