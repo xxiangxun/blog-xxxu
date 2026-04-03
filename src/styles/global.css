@@ -94,3 +94,21 @@ html[data-theme="dark"] {
 .animate-title-hover:hover {
   transform: scale(1.03);
 }
+
+/* ============================================== */
+/* ⌨️ 打字机效果（给标题用）*/
+/* ============================================== */
+.animate-typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--accent);
+  animation: typing 2.2s steps(10, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: var(--accent); }
+}
