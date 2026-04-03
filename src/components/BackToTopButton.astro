@@ -27,14 +27,13 @@ import IconArrowNarrowUp from "@/assets/icons/IconArrowNarrowUp.svg";
     <IconChevronLeft class="inline-block rotate-90 md:hidden" />
     <span class="sr-only text-sm group-hover:text-accent md:not-sr-only">
       <IconArrowNarrowUp class="inline-block size-4" />
-      Back To Top
+      回到顶部
     </span>
   </button>
 </div>
 
 <script is:inline data-astro-rerun>
-  /** Scrolls the document to the top when
-   * the "Back to Top" button is clicked. */
+  /** 点击按钮滚动到页面顶部 */
   function backToTop() {
     const rootElement = document.documentElement;
     const btnContainer = document.querySelector("#btt-btn-container");
@@ -44,13 +43,13 @@ import IconArrowNarrowUp from "@/assets/icons/IconArrowNarrowUp.svg";
     if (!rootElement || !btnContainer || !backToTopBtn || !progressIndicator)
       return;
 
-    // Attach click event handler for back-to-top button
+    // 绑定回到顶部按钮点击事件
     backToTopBtn.addEventListener("click", () => {
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     });
 
-    // Handle button visibility according to scroll position
+    // 根据滚动位置控制按钮显示/隐藏
     let lastVisible = null;
     function handleScroll() {
       const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
