@@ -1,29 +1,17 @@
-***
-
+---
 author: xxxu
-
 pubDatetime: 2025-04-02T19:00:00Z
-
 modDatetime: 2025-04-02T21:00:00Z
-
 title: Docker 小白入门系列（2）：手把手教你装 Docker
-
 slug: docker-install-guide-for-win-mac-linux
-
 featured: false
-
 draft: false
-
 tags:
-
-- Docker
-- 安装教程
-- 环境配置
-
-  description: 小白友好的 Docker 安装指南，Windows/Mac/Linux 三大系统手把手实操，附安装高频坑点解决，装完就能直接用，全程无废话超易懂！
-
-***
-
+  - Docker
+  - 安装教程
+  - 环境配置
+description: 小白友好的 Docker 安装指南，Windows/Mac/Linux 三大系统手把手实操，附安装高频坑点解决，装完就能直接用，全程无废话超易懂！
+---
 大家好，这是 Docker 小白入门系列的第二篇，上一篇咱们大概聊了下 Docker 是啥、为啥小白也得学，这篇直接上手实操 —— 教你在 Windows、Mac、Linux 三大系统装 Docker，全程一步一步来，保证跟着做就能装成功，还会把我当初装的时候踩的坑、新手最容易卡壳的地方，提前把解决方法写出来，少走弯路。
 
 其实装 Docker 真没啥复杂的，不同系统就几步核心操作，几分钟就能搞定，装完咱们就能开始玩 Docker 的各种命令，真正上手用起来了。
