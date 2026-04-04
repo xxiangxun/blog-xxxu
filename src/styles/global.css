@@ -70,7 +70,7 @@ html[data-theme="dark"] {
 }
 
 /* ============================================== */
-/* 🌟 首页标题动态效果（柔和、高级、不花哨）       */
+/* 🌟 渐变流光标题（高级、柔和、不刺眼）*/
 /* ============================================== */
 .animate-title {
   background: linear-gradient(90deg, var(--accent), #64748b, var(--accent));
@@ -78,41 +78,19 @@ html[data-theme="dark"] {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: title-gradient 6s ease-in-out infinite;
+  animation: title-shine 4s ease infinite;
 }
 
-@keyframes title-gradient {
+@keyframes title-shine {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* 轻微悬浮放大效果 */
+/* 轻微悬浮放大 */
 .animate-title-hover {
   transition: all 0.3s ease;
 }
 .animate-title-hover:hover {
   transform: scale(1.03);
-}
-
-/* ============================================== */
-/* ⌨️ 完美打字机（光标紧贴文字，绝不乱跑）         */
-/* ============================================== */
-.animate-typewriter {
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 2px solid var(--accent);
-  display: inline-block;
-  width: fit-content;
-  animation: typing 2.5s steps(8, end) forwards, blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: var(--accent); }
 }
