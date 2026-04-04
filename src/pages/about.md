@@ -3,12 +3,8 @@ layout: ../layouts/AboutLayout.astro
 title: "关于"
 ---
 
-<div class="not-prose text-center mb-10">
-  <img src="https://img.xxxu.com.cn/img/dev.svg" alt="Developer" class="w-48 md:w-56 mx-auto opacity-90">
-</div>
-
 <div class="text-lg leading-relaxed mb-10 text-center">
-岂曰无衣，与子同袍。<br>
+岂曰无衣？与子同袍。<br>
 这里是我的技术自留地，也是记录成长与思考的小角落。
 </div>
 
@@ -17,6 +13,10 @@ title: "关于"
 我是一名喜欢技术、热爱记录、习惯在思考中成长的人。从学习编程到动手做项目，从踩坑到慢慢理清思路，我逐渐习惯用文字把过程整理下来，于是便有了这个博客。
 
 它不只是一个技术站点，更是我整理自己、沉淀自己、与同路人交流的小小空间。我在这里写生活、写学习、写项目、写感悟，也写那些一闪而过却值得留下的想法。
+
+<div class="not-prose my-10 text-center">
+  <img src="https://img.xxxu.com.cn/img/dev.svg" alt="Developer" class="w-48 md:w-56 mx-auto opacity-90">
+</div>
 
 ## 博客里会写些什么
 
@@ -38,7 +38,7 @@ title: "关于"
 于我而言，写作是一种**整理思绪**的方式。把模糊的想法梳理清楚，把零散的知识串联成体系，把走过的弯路变成可回顾的经验。
 
 同时，我也相信分享的意义。一个人可以走得很快，但一群人可以走得更远。
-如果我的某篇文章、某段经历、某个思路，能给你带来一点点启发或帮助，那便是这件事最有价值的地方。
+如果我的某段经历或思路能给你带来一点点启发，便是这件事最有价值的地方。
 
 ## 关于我
 
@@ -47,12 +47,10 @@ title: "关于"
 
 相信长期主义，相信持续积累，相信技术可以温暖且有用。
 
-## 一起交流，共同成长
+## 联系我
 
-如果你也在学习技术、记录生活，或者对博客内容有疑问、建议、想法，都欢迎找我交流。
-
-你可以直接点击邮箱联系我：  
-[xxxu@xxxu.me](sslocal://flow/file_open?url=mailto%3Axxxu%40xxxu.me&flow_extra=eyJsaW5rX3R5cGUiOiJjb2RlX2ludGVycHJldGVyIn0=)
+欢迎通过邮件与我交流：  
+<a href="mailto:xxxu@xxxu.me" class="inline-flex items-center">📩 xxxu@xxxu.me</a>
 
 感谢你的到访，
 愿我们在各自的路上稳步前行，以技术为甲，以文字为袍，与子同袍，共赴成长。
