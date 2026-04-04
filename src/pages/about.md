@@ -3,9 +3,14 @@ layout: ../layouts/AboutLayout.astro
 title: "关于"
 ---
 
-<div class="text-lg leading-relaxed mb-10 text-center">
-岂曰无衣？与子同袍。<br>
-这里是我的技术自留地，也是记录成长与思考的小角落。
+<div class="text-center text-2xl md:text-3xl font-bold tracking-wide my-10">
+岂曰无衣？
+<br>
+与子同袍。
+</div>
+
+<div class="text-center text-sm opacity-80 italic -mt-6 mb-12">
+这里是我的技术自留地，也是记录成长与思考的小角落
 </div>
 
 你好，欢迎来到我的博客。
@@ -14,11 +19,9 @@ title: "关于"
 
 它不只是一个技术站点，更是我整理自己、沉淀自己、与同路人交流的小小空间。我在这里写生活、写学习、写项目、写感悟，也写那些一闪而过却值得留下的想法。
 
-<div class="not-prose my-10 text-center">
-  <img src="https://img.xxxu.com.cn/img/dev.svg" alt="Developer" class="w-48 md:w-56 mx-auto opacity-90">
-</div>
+---
 
-## 博客里会写些什么
+## 博客内容
 
 ### 日常与思考
 生活里的细碎感悟、学习路上的心态变化、阶段性的总结与反思。
@@ -33,7 +36,9 @@ title: "关于"
 
 内容偏向实战、易懂、可复现，希望能帮到同样在学习路上的你。
 
-## 为什么要写博客
+---
+
+## 为什么写博客
 
 于我而言，写作是一种**整理思绪**的方式。把模糊的想法梳理清楚，把零散的知识串联成体系，把走过的弯路变成可回顾的经验。
 
@@ -47,10 +52,13 @@ title: "关于"
 
 相信长期主义，相信持续积累，相信技术可以温暖且有用。
 
+---
+
 ## 联系我
 
-欢迎通过邮件与我交流：  
+欢迎通过邮件与我交流：
 <a href="mailto:xxxu@xxxu.me" class="inline-flex items-center">📩 xxxu@xxxu.me</a>
 
-感谢你的到访，
-愿我们在各自的路上稳步前行，以技术为甲，以文字为袍，与子同袍，共赴成长。
+<div class="text-center text-sm opacity-70 mt-12">
+感谢你的到访，愿我们以技术为甲，以文字为袍，与子同袍，共赴成长。
+</div>
