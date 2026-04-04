@@ -1,7 +1,7 @@
 ---
 author: xxxu
-pubDatetime: 2025-04-14T19:00:00Z
-modDatetime: 2025-04-14T21:00:00Z
+pubDatetime: 2025-04-20T19:00:00Z
+modDatetime: 2025-04-20T21:00:00Z
 title: Docker 小白入门系列（10）：Docker 部署避坑指南
 slug: docker-deploy-pitfalls-guide
 featured: false
