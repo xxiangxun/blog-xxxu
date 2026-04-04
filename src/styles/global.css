@@ -96,21 +96,23 @@ html[data-theme="dark"] {
 }
 
 /* ============================================== */
-/* ⌨️ 超级流畅打字机（无卡顿、超自然）             */
+/* ⌨️ 完美打字机（光标紧贴文字，绝不乱跑）         */
 /* ============================================== */
 .animate-typewriter {
   overflow: hidden;
   white-space: nowrap;
   border-right: 2px solid var(--accent);
-  animation: typing 2.5s linear forwards, blink-caret 1s step-end infinite;
+  display: inline-block;
+  width: fit-content;
+  animation: typing 2.5s steps(8, end) forwards, blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
-  0% { width: 0%; }
-  100% { width: 100%; }
+  from { width: 0; }
+  to { width: 100%; }
 }
 
 @keyframes blink-caret {
-  0%, 100% { border-color: transparent; }
+  from, to { border-color: transparent; }
   50% { border-color: var(--accent); }
 }
