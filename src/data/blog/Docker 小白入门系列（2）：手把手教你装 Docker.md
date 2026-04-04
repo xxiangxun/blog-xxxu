@@ -30,7 +30,7 @@ Windows 装 Docker 分两种情况，直接装 Docker Desktop 最省事，要是
 
 ### 方法一：直接装 Docker Desktop（最省事，新手推荐）
 
-1. 打开 Docker 官网下载安装包，地址放这了：[docker.com](www.docker.com)
+1. 打开 Docker 官网下载安装包，地址放这了：[docker.com]
 2. 下载完双击安装包，一路点「下一步」就好，所有配置默认就行，不用改
 3. 安装完成后会提示重启电脑，按提示重启就 OK
 4. 重启后找到 Docker Desktop 图标打开，第一次启动会等十几秒，看到电脑右下角系统托盘里出现 Docker 的小图标，就说明启动成功了
