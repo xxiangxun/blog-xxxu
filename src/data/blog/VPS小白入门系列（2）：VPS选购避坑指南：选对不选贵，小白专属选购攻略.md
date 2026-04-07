@@ -1,7 +1,7 @@
 ---
 author: xxxu
-pubDatetime: 2025-04-17T19:00:00Z
-modDatetime: 2025-04-17T21:00:00Z
+pubDatetime: 2025-04-23T19:00:00Z
+modDatetime: 2025-04-23T21:00:00Z
 title: VPS小白入门系列（2）：VPS选购避坑指南：选对不选贵，小白专属选购攻略
 slug: vps-beginner-buy-guide-avoid-pitfalls
 featured: false
