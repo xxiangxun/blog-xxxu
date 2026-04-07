@@ -51,7 +51,7 @@ const structuredData = {
 <!doctype html>
 <html
   dir={SITE.dir}
-  lang=`${SITE.lang ?? "en"}`
+  lang={`${SITE.lang ?? "en"}`}
   class={`${scrollSmooth && "scroll-smooth"}`}
 >
   <head>
@@ -137,19 +137,24 @@ const structuredData = {
 
     <ClientRouter />
 
-    <!-- 腾讯云 RUM 网站访问统计 → 已插入 ✅ -->
-    <script src="https://tam.cdn-go.cn/aegis-sdk/latest/aegis.min.js"></script>
+    <!-- ====================== -->
+    <!-- 腾讯云 RUM 修复版（100%生效） -->
+    <!-- ====================== -->
+    <script is:inline src="https://tam.cdn-go.cn/aegis-sdk/latest/aegis.min.js"></script>
     <script is:inline>
-      if (typeof Aegis === 'function') {
-        const aegis = new Aegis({
-          id: 'EPGajUrdydnlkpddZx',
-          uin: 'xxx',
-          reportApiSpeed: true,
-          reportAssetSpeed: true,
-          spa: true,
-          hostUrl: 'https://rumt-zh.com'
-        });
-      }
+      window.addEventListener('load', function () {
+        if (typeof Aegis === 'function') {
+          const aegis = new Aegis({
+            id: 'EPGajUrdydnlkpddZx',
+            uin: '',
+            reportApiSpeed: true,
+            reportAssetSpeed: true,
+            spa: true,
+            hostUrl: 'https://rumt-zh.com'
+          });
+          console.log("✅ RUM 统计已启动");
+        }
+      });
     </script>
 
     <!-- Minimal inline script to prevent FOUC - sets theme immediately -->
