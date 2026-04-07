@@ -137,6 +137,21 @@ const structuredData = {
 
     <ClientRouter />
 
+    <!-- 腾讯云 RUM 网站访问统计 → 已插入 ✅ -->
+    <script src="https://tam.cdn-go.cn/aegis-sdk/latest/aegis.min.js"></script>
+    <script is:inline>
+      if (typeof Aegis === 'function') {
+        const aegis = new Aegis({
+          id: 'EPGajUrdydnlkpddZx',
+          uin: 'xxx',
+          reportApiSpeed: true,
+          reportAssetSpeed: true,
+          spa: true,
+          hostUrl: 'https://rumt-zh.com'
+        });
+      }
+    </script>
+
     <!-- Minimal inline script to prevent FOUC - sets theme immediately -->
     <script is:inline>
       (function () {
