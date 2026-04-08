@@ -32,7 +32,7 @@ const {
 const socialImageURL = new URL(ogImage, Astro.url);
 
 const structuredData = {
-  "@context": "https://schema.org",
+  "@context": "https://schema.org/",
   "@type": "BlogPosting",
   headline: `${title}`,
   image: `${socialImageURL}`,
@@ -51,7 +51,7 @@ const structuredData = {
 <!doctype html>
 <html
   dir={SITE.dir}
-  lang=`${SITE.lang ?? "en"}`
+  lang={`${SITE.lang ?? "en"}`}
   class={`${scrollSmooth && "scroll-smooth"}`}
 >
   <head>
@@ -113,7 +113,6 @@ const structuredData = {
     />
 
     <!-- Enable RSS feed auto-discovery  -->
-    <!-- https://docs.astro.build/en/recipes/rss/#enabling-rss-feed-auto-discovery -->
     <link
       rel="alternate"
       type="application/rss+xml"
@@ -124,9 +123,6 @@ const structuredData = {
     <meta name="theme-color" content="" />
 
     {
-      // If PUBLIC_GOOGLE_SITE_VERIFICATION is set in the environment variable,
-      // include google-site-verification tag in the heading
-      // Learn more: https://support.google.com/webmasters/answer/9008080#meta_tag_verification&zippy=%2Chtml-tag
       PUBLIC_GOOGLE_SITE_VERIFICATION && (
         <meta
           name="google-site-verification"
@@ -134,6 +130,9 @@ const structuredData = {
         />
       )
     }
+
+    <!-- 👇 👇 👇 我只在这里加了百度验证代码 👇 👇 👇 -->
+    <meta name="baidu-site-verification" content="codeva-NJ1rcv4DDu" />
 
     <ClientRouter />
 
@@ -152,15 +151,11 @@ const structuredData = {
         }
 
         const themeValue = getPreferTheme();
-
-        // Set theme immediately to prevent flash
         document.firstElementChild?.setAttribute("data-theme", themeValue);
-
-        // Export minimal API for external script
         window.theme = {
           themeValue: themeValue,
           getTheme: () => window.theme.themeValue,
-          setTheme: val => {
+          setTheme: (val) => {
             window.theme.themeValue = val;
           },
         };
@@ -169,8 +164,6 @@ const structuredData = {
   </head>
   <body>
     <slot />
-
-    <!-- Load full theme logic -->
     <script src="../scripts/theme.ts"></script>
   </body>
 </html>
