@@ -51,7 +51,7 @@ const structuredData = {
 <!doctype html>
 <html
   dir={SITE.dir}
-  lang={`${SITE.lang ?? "en"}`}
+  lang=`${SITE.lang ?? "en"}`
   class={`${scrollSmooth && "scroll-smooth"}`}
 >
   <head>
@@ -113,6 +113,7 @@ const structuredData = {
     />
 
     <!-- Enable RSS feed auto-discovery  -->
+    <!-- https://docs.astro.build/en/recipes/rss/#enabling-rss-feed-auto-discovery -->
     <link
       rel="alternate"
       type="application/rss+xml"
@@ -123,6 +124,9 @@ const structuredData = {
     <meta name="theme-color" content="" />
 
     {
+      // If PUBLIC_GOOGLE_SITE_VERIFICATION is set in the environment variable,
+      // include google-site-verification tag in the heading
+      // Learn more: https://support.google.com/webmasters/answer/9008080#meta_tag_verification&zippy=%2Chtml-tag
       PUBLIC_GOOGLE_SITE_VERIFICATION && (
         <meta
           name="google-site-verification"
@@ -132,29 +136,6 @@ const structuredData = {
     }
 
     <ClientRouter />
-
-    <!-- ✅ 腾讯云 RUM 最终修复版（两个script都加is:inline+load等待+强制PV） -->
-    <script is:inline src="https://tam.cdn-go.cn/aegis-sdk/latest/aegis.min.js"></script>
-    <script is:inline>
-      // 必须等页面完全加载、SDK就绪再初始化，彻底避免报错
-      window.addEventListener('load', () => {
-        if (typeof Aegis === 'function') {
-          const aegis = new Aegis({
-            id: 'EPGajUrdydnlkpddZx', // 你的上报ID，正确
-            uin: '', // 留空，不要填xxx
-            reportApiSpeed: true,
-            reportAssetSpeed: true,
-            spa: true, // Astro SPA必须开启
-            hostUrl: 'https://rumt-zh.com'
-          });
-          console.log('✅ Aegis 初始化成功，开始上报数据');
-          // 手动触发一次PV，确保首屏必上报
-          aegis.reportEvent({ name: 'pageview', ext2: window.location.pathname });
-        } else {
-          console.error('❌ Aegis SDK 加载失败，请检查CDN/网络');
-        }
-      });
-    </script>
 
     <!-- Minimal inline script to prevent FOUC - sets theme immediately -->
     <script is:inline>
@@ -171,7 +152,11 @@ const structuredData = {
         }
 
         const themeValue = getPreferTheme();
+
+        // Set theme immediately to prevent flash
         document.firstElementChild?.setAttribute("data-theme", themeValue);
+
+        // Export minimal API for external script
         window.theme = {
           themeValue: themeValue,
           getTheme: () => window.theme.themeValue,
@@ -184,6 +169,8 @@ const structuredData = {
   </head>
   <body>
     <slot />
+
+    <!-- Load full theme logic -->
     <script src="../scripts/theme.ts"></script>
   </body>
 </html>
