@@ -1,23 +1,43 @@
 export const SITE = {
-  website: "https://xxxu.com.cn/", // replace this with your deployed domain
-  author: "xxxu",
+  website: "https://xxxu.com.cn/",
+  author: "别催那只考拉",
   profile: "https://xxxu.com.cn/",
-  desc: "记录技术学习、编程实践与生活思考，分享学习方法、成长复盘与个人感悟，在技术精进与生活平衡中持续进步，做长期主义的成长记录者。",
   title: "别催那只考拉",
+  desc: "深度睡眠，偶尔清醒。记录技术学习、Docker、VPS、服务器运维与AI部署实践。",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 10,
   postPerPage: 10,
-  scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
+  scheduledPostMargin: 15 * 60 * 1000,
   showArchives: true,
-  showBackButton: true, // show back button in post detail
+  showBackButton: true,
   editPost: {
     enabled: false,
     text: "Edit page",
     url: "https://github.com/",
   },
   dynamicOgImage: true,
-  dir: "ltr", // "rtl" | "auto"
-  lang: "zh-CN", // html lang code. Set this empty and default will be "en"
-  timezone: "Asia/Shanghai", // Default global timezone (IANA format) https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  dir: "ltr",
+  lang: "zh-CN",
+  timezone: "Asia/Shanghai",
 } as const;
+
+export const METADATA = {
+  title: "别催那只考拉",
+  description: "深度睡眠，偶尔清醒。专注Docker、VPS、Linux运维、AI大模型本地部署，分享技术教程与成长思考。",
+  keywords: [
+    "技术博客",
+    "个人博客",
+    "Docker",
+    "VPS",
+    "Linux",
+    "服务器搭建",
+    "AI部署",
+    "DeepSeek",
+    "编程学习",
+    "自学编程",
+    "网站搭建",
+    "成长记录"
+  ],
+  url: "https://xxxu.com.cn/",
+};
