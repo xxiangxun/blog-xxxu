@@ -3,7 +3,7 @@ export const SITE = {
   author: "xxxu",
   profile: "https://xxxu.com.cn/",
   desc: "记录技术学习、编程实践与生活思考，分享学习方法、成长复盘与个人感悟，在技术精进与生活平衡中持续进步，做长期主义的成长记录者。",
-  title: "xxxu-me",
+  title: "别催那只考拉",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 10,
